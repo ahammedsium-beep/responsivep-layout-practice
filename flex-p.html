@@ -5,14 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Practice</title>
     <style>
-        
+        h1
+        {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .text-containers
+        {
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .paras{
+            background-color: teal;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .item-box{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px auto 0;
+        }
+        .box{
+            background-color: rgb(87, 172, 87);
+            color: white;
+            height: 40px;
+            width: 60px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media screen and (max-width: 576px){
+            .text-containers{
+                grid-template-columns: repeat(2, 1fr);
+                border: 2px solid white;
+            }
+            .box{
+                width: 90%;
+            }
+        }
     </style>
 </head>
 <body>
     <section>
         <h1>Responsive Practice</h1>
     </section>
-    <section>
+    <section class="text-containers">
         <div class="paras">
             <h3>box-1</h3>
             <p>
@@ -37,11 +79,29 @@
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti porro accusamus praesentium, et pariatur temporibus repudiandae illo velit quisquam voluptate totam, molestiae nam doloribus incidunt fugit blanditiis ex. Ea, tenetur.
             </p>
         </div>
-        <div class="paras">
-            <h3>box-1</h3>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti porro accusamus praesentium, et pariatur temporibus repudiandae illo velit quisquam voluptate totam, molestiae nam doloribus incidunt fugit blanditiis ex. Ea, tenetur.
-            </p>
+    </section>
+    <section>
+        <div class="item-box">
+            <div class="box">box-1</div>
+            <div class="box">box-2</div>
+            <div class="box">box-3</div>
+            <div class="box">box-4</div>
+            <div class="box">box-5</div>
+            <div class="box">box-6</div>
+            <div class="box">box-7</div>
+            <div class="box">box-8</div>
+            <div class="box">box-9</div>
+            <div class="box">box-10</div>
+            <div class="box">box-11</div>
+            <div class="box">box-12</div>
+            <div class="box">box-13</div>
+            <div class="box">box-14</div>
+            <div class="box">box-15</div>
+            <div class="box">box-16</div>
+            <div class="box">box-17</div>
+            <div class="box">box-18</div>
+            <div class="box">box-19</div>
+            <div class="box">box-20</div>
         </div>
     </section>
 </body>
